@@ -1,0 +1,11 @@
+tag_config: 
+   template:
+     template_id: <template_id>
+     project_id: <project_id>
+     region: <region>
+   fields: 
+     - {name: data_owner, value: john@smith.com}
+     - {name: source, value: Cloud SQL}
+   rules:
+     - bigquery/project/<project_id>/dataset/<dataset_id>/<table_id_with_wildcards>
+     - bigquery/project/<project_id>/dataset/<dataset_id>/<table_id>
